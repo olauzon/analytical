@@ -57,6 +57,12 @@ module Analytical
         HERE
       end
 
+      def submit_information
+        check_for_console <<-HERE
+        console.log("Submit");
+        HERE
+      end
+
       private
 
       CONSOLE_JS_ESCAPE_MAP = {
