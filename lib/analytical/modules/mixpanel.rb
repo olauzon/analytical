@@ -19,7 +19,7 @@ module Analytical
 
           <script type="text/javascript">
               try {
-                  var mix = new MixpanelLib('#{options[:key]}');
+                  var mpmetrics = new MixpanelLib('#{options[:key]}');
               } catch(err) {
                   null_fn = function () {};
                   var mpmetrics = {
